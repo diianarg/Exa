@@ -1,0 +1,35 @@
+
+ <h1>Universidades</h1></div>
+ <p>Por favor, escribe un pais</p>
+<div>
+    <table class="table">
+        <thead>
+          <tr>
+          
+            <th scope="col">Pais</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Sitio</th>
+        
+          </tr>
+        </thead>
+        <tr>
+           
+            <td>{{character.country}}</td>
+            <td>{{character.state}}</td>
+            <td>{{character.name}}</td>
+            <td>{{character.web_pages}}</td>
+          
+          </tr>
+
+        </tbody>
+      </table>
+      <div *ngIf="loading">loading...</div>
+ 
+<div *ngIf="errorMessage" class="alert alert-warning">
+  <strong>Warning!</strong> {{errorMessage | json}}
+</div>
+</div>
+<pre>{{character | json}}</pre>
+
+
